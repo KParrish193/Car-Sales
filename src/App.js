@@ -16,14 +16,16 @@ const App = (props) => {
   return (
     <div className="boxes">
       <div className="box">
-        <Header car={props.car} />
+        <Header 
+          car={props.car} />
         <AddedFeatures 
           car={props.car} 
           removeItem ={props.removeItem} />
       </div>
       <div className="box">
         <AdditionalFeatures 
-          additionalFeatures={props.additionalFeatures} />
+          additionalFeatures={props.additionalFeatures}
+          addItem={props.addItem} />
         <Total 
           car={props.car} 
           additionalPrice={props.additionalPrice} />
