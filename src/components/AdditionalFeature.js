@@ -10,7 +10,7 @@ const AdditionalFeature = props => {
         onClick={() => {
           props.addItem(props.feature)
         }}>Add</button>
-      {props.feature.name} (+{props.feature.price})
+      {props.feature.name} (+${props.feature.price})
     </li>
   );
 };

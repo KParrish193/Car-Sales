@@ -8,7 +8,7 @@ import React from 'react';
       onClick={() => {
         props.removeItem(props.feature)
       }}> X </button>
-      {props.feature.name} 
+      {props.feature.name}, ${props.feature.price} 
     </li>
   );
 };

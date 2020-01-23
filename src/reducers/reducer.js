@@ -8,10 +8,10 @@ const initialState = {
             features: []
         },
         additionalFeatures: [
-            { id: 1, name: 'V-6 engine', price: 1500 },
-            { id: 2, name: 'Racing detail package', price: 1500 },
-            { id: 3, name: 'Premium sound system', price: 500 },
-            { id: 4, name: 'Rear spoiler', price: 250 }
+            { id: 1, name: 'V-8 engine', price: 1500 },
+            { id: 2, name: 'Racing Detail Package', price: 1500 },
+            { id: 3, name: 'Premium Sound System', price: 500 },
+            { id: 4, name: 'Rear Spoiler', price: 250 }
         ]
 };
 
