@@ -1,3 +1,4 @@
+//initial state
 const initialState = {
         additionalPrice: 0,
         car: {
@@ -14,8 +15,26 @@ const initialState = {
         ]
 };
 
+//reducer
 export const reducer = (state = initialState, action ) => {
-    switch(action.type): {
-        default: 
+    console.log('reducer state', state)
+    console.log('reducer payload', action.payload)
+    
+    
+    switch(action.type) {
+        case 'ADD_ITEM':
+            return{
+                ...state,
+                additionalPrice: state.additionalPrice + action.payload.price,
+                car: {
+                    ...state.car,
+                    features: [
+                        ...state.car.features,
+                        action.payload
+                    ]
+                }
+            }
+        case 'REMOVE_ITEM':
+        default: return state
     }
 }
